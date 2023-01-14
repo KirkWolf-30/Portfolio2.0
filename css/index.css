@@ -1,1 +1,288 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: Azonix;
+  src: url(/Azonix.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FDFDFD !important;
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.container {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.btn {
+  background-color: #FAD02C !important;
+  color: #2E2E2E !important;
+  border-radius: 15px !important;
+  font-size: 18px !important;
+  font-family: "Forum", cursive !important;
+}
+
+.darkBtn {
+  background-color: #2E2E2E !important;
+  color: #FDFDFD !important;
+}
+
+.Header {
+  font-size: 94px !important;
+  font-family: "Alegreya", serif !important;
+  color: #2E2E2E;
+}
+
+.Highlight {
+  color: #FAD02C !important;
+  text-decoration: none !important;
+}
+
+.fades {
+  color: #6E7170 !important;
+  text-decoration: underline !important;
+}
+
+.text {
+  font-size: 32px;
+  font-family: "Forum", cursive;
+}
+
+nav {
+  background-color: #FDFDFD !important;
+  color: #2E2E2E;
+  font-family: "Forum", cursive !important;
+}
+nav .nav-link {
+  color: #2E2E2E !important;
+  margin-left: 5px !important;
+  font-size: 18px;
+}
+nav .nav-link:hover {
+  color: #FAD02C !important;
+}
+
+#Home {
+  background: url(/Images/BG.svg);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+#Home #Furniture {
+  -webkit-animation-name: Up;
+          animation-name: Up;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#Home #Phone {
+  -webkit-animation-name: Rotate;
+          animation-name: Rotate;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+#Home #ARC, #Home #Kevlar {
+  -webkit-animation-name: Vanish;
+          animation-name: Vanish;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+@-webkit-keyframes Up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes Up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes Rotate {
+  0% {
+    transform: rotate(90 deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+}
+@keyframes Rotate {
+  0% {
+    transform: rotate(90 deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes Vanish {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Vanish {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#About {
+  background-color: #2E2E2E !important;
+  background-image: url(/Images/BACKGROUND.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+#About .aboutText {
+  position: relative;
+}
+#About .me {
+  position: absolute;
+  top: 0;
+  left: 5;
+  transform: translate(0, -30px);
+}
+#About .aboutContainer {
+  background-color: #2E2E2E;
+  border-radius: 30px;
+  color: #FDFDFD !important;
+  transform: rotate(-8deg);
+}
+#About .factContainer {
+  background-color: #FDFDFD;
+  border-radius: 30px;
+}
+#About .factContainer .FactHeader {
+  font-family: "Forum", cursive !important;
+}
+#About .rate {
+  transform: rotate(35deg);
+}
+#About .Satisfy {
+  transform: rotate(-20deg);
+}
+#About .Project {
+  transform: rotate(20deg);
+}
+#About .fact {
+  margin-bottom: 150px !important;
+}
+
+#Project {
+  background-image: url(/Images/BgDesign.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#Project .nav-pills {
+  font-family: "Forum", cursive !important;
+  font-size: 24px;
+}
+#Project .nav-pills .nav-link.active, #Project .nav-pills .show > .nav-link {
+  background-color: #FAD02C !important;
+  color: #2E2E2E !important;
+  border: none !important;
+}
+#Project #pills-profile-tab {
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+#Project #pills-home-tab {
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+#Project .nav-link {
+  background-color: rgba(253, 253, 253, 0.1215686275);
+  border: 1px solid rgba(109, 115, 124, 0.3333333333);
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+  color: #2E2E2E !important;
+}
+
+@media screen and (max-width: 480px) {
+  .Header {
+    font-size: 48px !important;
+    font-family: "Alegreya", serif !important;
+    color: #2E2E2E;
+  }
+  .Highlight {
+    color: #FAD02C !important;
+  }
+  .text {
+    font-size: 24px;
+    font-family: "Forum", cursive;
+  }
+  #About {
+    background-color: #FAD02C !important;
+    background-image: none;
+  }
+  #About .aboutText {
+    position: initial;
+  }
+  #About .me {
+    position: initial;
+  }
+  #About .aboutContainer {
+    background-color: #2E2E2E;
+    border-radius: 30px;
+    color: #FDFDFD !important;
+    transform: rotate(0);
+  }
+  #About .factContainer {
+    background-color: #FDFDFD;
+    border-radius: 30px;
+  }
+  #About .factContainer .FactHeader {
+    font-family: "Forum", cursive !important;
+  }
+  #About .rate {
+    transform: rotate(0);
+  }
+  #About .Satisfy {
+    transform: rotate(0);
+  }
+  #About .Project {
+    transform: rotate(0);
+  }
+  #About .fact {
+    margin-bottom: 0px !important;
+  }
+}/*# sourceMappingURL=index.css.map */

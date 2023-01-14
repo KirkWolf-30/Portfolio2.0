@@ -1,0 +1,305 @@
+@font-face {
+    font-family: Azonix;
+    src: url(/Azonix.otf);
+}
+
+$Alegreya: 'Alegreya', serif;
+$Forum: 'Forum', cursive;
+
+//Colors
+$Moonlight: #FAD02C;
+$Black: #2E2E2E;
+$Snow: #FDFDFD;
+$LoneDark: #6E7170;
+$SpaceGrey: #6D737C;
+
+//General
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $Snow !important;
+}
+body::-webkit-scrollbar{
+    display: none !important;
+}
+
+
+.container{
+    width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.btn{
+    background-color: $Moonlight !important;
+    color: $Black !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+    font-family: $Forum !important;
+}
+
+.darkBtn{
+    background-color: $Black !important;
+    color: $Snow !important;
+}
+
+.Header{
+    font-size: 94px !important;
+    font-family: $Alegreya !important;
+    color: $Black;
+}
+
+.Highlight{
+    color: $Moonlight !important;
+    text-decoration: none !important;
+}
+
+.fades{
+    color: $LoneDark !important;
+    text-decoration: underline !important;
+}
+
+.text{
+    font-size: 32px;
+    font-family: $Forum;
+}
+
+//Nav
+nav{
+    background-color: $Snow !important;
+    color: $Black;
+    font-family: $Forum !important;
+
+    .nav-link{
+        color: $Black !important;
+        margin-left: 5px !important;
+        font-size: 18px;
+    }
+    .nav-link:hover{
+        color: $Moonlight !important;
+    }
+}
+
+//Home
+
+#Home{
+    background: url(/Images/BG.svg);
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+
+#Furniture{
+    animation-name: Up;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#Phone{
+    animation-name: Rotate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#ARC , #Kevlar{
+    animation-name: Vanish;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+ animation-iteration-count: 1;
+}
+
+@keyframes Up {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes Rotate {
+    0%{
+        transform: rotate(90 deg);
+    }
+    50%{
+        transform: rotate(0);
+    }
+}
+
+@keyframes Vanish {
+    0% { opacity: 0};
+    100% { opacity: 1;}
+
+}
+
+}
+
+//About
+
+#About{
+    background-color: $Black !important;
+    background-image: url(/Images/BACKGROUND.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+    .aboutText{
+        position: relative;
+    }
+    .me{
+        position: absolute;
+        top: 0;
+        left: 5;
+        transform: translate(0 , -30px)
+    }
+    .aboutContainer{
+        background-color: $Black;
+        border-radius: 30px;
+        color: $Snow !important;
+        transform: rotate(-8deg);
+  
+    }
+
+    .factContainer{
+        background-color: $Snow;
+        border-radius: 30px;
+
+        .FactHeader{
+            font-family: $Forum !important;
+        }
+    }
+
+    .rate{
+        transform: rotate(35deg);
+    }
+
+    .Satisfy{
+        transform: rotate(-20deg);
+    }
+
+    .Project{
+        transform: rotate(20deg);
+    }
+
+    .fact{
+        margin-bottom: 150px !important;
+    }
+
+}
+
+//Project
+
+#Project{
+
+    background-image: url(/Images/BgDesign.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .nav-pills {
+        font-family: $Forum !important;
+        font-size: 24px;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background-color: $Moonlight !important;
+        color: $Black !important;
+        border: none !important;
+    }
+
+    #pills-profile-tab{
+        border-top-right-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    #pills-home-tab{
+        border-top-left-radius: 15px !important;
+        border-bottom-left-radius: 15px !important;
+
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+     .nav-link{
+        background-color: #fdfdfd1f;
+        border: 1px solid #6d737c55;
+        backdrop-filter: blur( 6px ) !important;
+        -webkit-backdrop-filter: blur( 6px ) !important;
+        color: $Black !important;
+    }
+}
+
+
+//Mobile Css
+@media screen and (max-width: 480px) {
+    .Header{
+        font-size: 48px !important;
+        font-family: $Alegreya !important;
+        color: $Black;
+    }
+    
+    .Highlight{
+        color: $Moonlight !important;
+    }
+    
+    .text{
+        font-size: 24px;
+        font-family: $Forum;
+    }
+
+
+    #About{
+        background-color: $Moonlight !important;
+        background-image: none;
+    
+        .aboutText{
+            position:initial;
+        }
+        .me{
+            position: initial;
+        }
+        .aboutContainer{
+            background-color: $Black;
+            border-radius: 30px;
+            color: $Snow !important;
+            transform: rotate(0);
+      
+        }
+    
+        .factContainer{
+            background-color: $Snow;
+            border-radius: 30px;
+    
+            .FactHeader{
+                font-family: $Forum !important;
+            }
+        }
+    
+        .rate{
+            transform: rotate(0);
+        }
+    
+        .Satisfy{
+            transform: rotate(0);
+        }
+    
+        .Project{
+            transform: rotate(0);
+        }
+    
+        .fact{
+            margin-bottom: 0px !important;
+        }
+    
+    }
+    
+  }
