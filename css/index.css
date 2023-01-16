@@ -14,6 +14,7 @@ body {
 
 body::-webkit-scrollbar {
   display: none !important;
+  scroll-behavior: smooth !important;
 }
 
 .container {
@@ -32,6 +33,11 @@ body::-webkit-scrollbar {
 .darkBtn {
   background-color: #2E2E2E !important;
   color: #FDFDFD !important;
+}
+
+.blackBtn {
+  background-color: #2E2E2E !important;
+  color: #FAD02C !important;
 }
 
 .Header {
@@ -53,6 +59,35 @@ body::-webkit-scrollbar {
 .text {
   font-size: 32px;
   font-family: "Forum", cursive;
+}
+
+.Name {
+  font-family: "Forum", cursive !important;
+  font-size: 36px !important;
+}
+
+.skills {
+  font-family: "Forum", cursive;
+  font-size: 24px !important;
+  font-weight: 200 !important;
+  color: #FDFDFD !important;
+  text-decoration: none !important;
+}
+
+.FooterTitle {
+  font-family: "Alegreya", serif;
+  font-size: 32px;
+}
+
+.Footerlink {
+  color: #FDFDFD !important;
+  font-family: "Forum", cursive;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+.Footerlink:hover {
+  color: #FAD02C !important;
 }
 
 nav {
@@ -237,7 +272,127 @@ nav .nav-link:hover {
   color: #2E2E2E !important;
 }
 
+#Contact {
+  background-color: #FAD02C;
+  background-image: url(/Images/Contact.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#Contact .Heavy {
+  font-family: Azonix;
+  font-size: 240px;
+}
+#Contact .Heavy .Plain {
+  color: #FDFDFD !important;
+}
+#Contact .CardContainer {
+  position: relative;
+}
+#Contact .backCard {
+  width: 518px;
+  height: 323px;
+  border-radius: 15px;
+  z-index: 0;
+}
+#Contact .callCard {
+  background-color: #2E2E2E !important;
+  border-radius: 15px !important;
+  color: #FDFDFD;
+  z-index: 1;
+}
+#Contact .Solid {
+  position: absolute;
+  top: 0;
+  background-color: #FDFDFD;
+}
+#Contact .Line {
+  position: absolute;
+  top: 0;
+  border: 1px solid #FDFDFD !important;
+}
+#Contact .arc {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  -webkit-animation-name: Up;
+          animation-name: Up;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#Footer {
+  background-color: #2E2E2E;
+  background-image: url(/Images/BGLine.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FDFDFD;
+}
+
+@media only screen and (min-device-width: 540px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #About {
+    background-color: #FAD02C !important;
+    background-image: none;
+  }
+  #About .aboutText {
+    position: initial;
+  }
+  #About .me {
+    position: initial;
+  }
+  #About .aboutContainer {
+    background-color: #2E2E2E;
+    border-radius: 30px;
+    color: #FDFDFD !important;
+    transform: rotate(0);
+  }
+  #About .factContainer {
+    background-color: #FDFDFD;
+    border-radius: 30px;
+  }
+  #About .factContainer .FactHeader {
+    font-family: "Forum", cursive !important;
+  }
+  #About .rate {
+    transform: rotate(0);
+  }
+  #About .Satisfy {
+    transform: rotate(0);
+  }
+  #About .Project {
+    transform: rotate(0);
+  }
+  #About .fact {
+    margin-bottom: 0px !important;
+  }
+  #Project {
+    background-image: none !important;
+  }
+  #Contact {
+    background-image: none;
+  }
+  #Contact .Heavy {
+    font-size: 180px;
+  }
+}
 @media screen and (max-width: 480px) {
+  .Name {
+    font-family: "Forum", cursive !important;
+    font-size: 24px !important;
+  }
+  .skills {
+    font-family: "Forum", cursive;
+    font-size: 15px !important;
+    font-weight: 200 !important;
+    color: #FDFDFD !important;
+    text-decoration: none !important;
+  }
   .Header {
     font-size: 48px !important;
     font-family: "Alegreya", serif !important;
@@ -284,5 +439,26 @@ nav .nav-link:hover {
   }
   #About .fact {
     margin-bottom: 0px !important;
+  }
+  .nav-pills {
+    font-family: "Forum", cursive !important;
+    font-size: 15px !important;
+  }
+  #Project {
+    background-image: none !important;
+  }
+  #Contact {
+    background-image: none;
+  }
+  #Contact .Heavy {
+    font-size: 120px;
+  }
+  #Contact .Heavy .Plain {
+    color: #FDFDFD !important;
+  }
+  #Contact .callCard {
+    background-color: #2E2E2E !important;
+    border-radius: 15px !important;
+    color: #FDFDFD;
   }
 }/*# sourceMappingURL=index.css.map */
