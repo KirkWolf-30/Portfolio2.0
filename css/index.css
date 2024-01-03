@@ -111,45 +111,22 @@ nav .nav-link:hover {
   background-repeat: no-repeat;
 }
 #Home #Furniture {
-  -webkit-animation-name: Up;
-          animation-name: Up;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: Up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 #Home #Phone {
-  -webkit-animation-name: Rotate;
-          animation-name: Rotate;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: Rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 #Home #ARC, #Home #Kevlar {
-  -webkit-animation-name: Vanish;
-          animation-name: Vanish;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-}
-@-webkit-keyframes Up {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  animation-name: Vanish;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
 }
 @keyframes Up {
   0% {
@@ -162,28 +139,12 @@ nav .nav-link:hover {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes Rotate {
-  0% {
-    transform: rotate(90 deg);
-  }
-  50% {
-    transform: rotate(0);
-  }
-}
 @keyframes Rotate {
   0% {
     transform: rotate(90 deg);
   }
   50% {
     transform: rotate(0);
-  }
-}
-@-webkit-keyframes Vanish {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes Vanish {
@@ -316,14 +277,10 @@ nav .nav-link:hover {
   position: absolute;
   bottom: 0;
   right: 30px;
-  -webkit-animation-name: Up;
-          animation-name: Up;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: Up;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 #Footer {
